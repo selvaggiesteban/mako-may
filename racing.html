@@ -63,51 +63,55 @@
   <body>
     <!-- top navbar -->
     <nav class="navbar navbar-expand-lg navbar-light top-navbar fixed-top">
-      <div class="container">
+      <div class="container" style="justify-content: start">
         <a class="navbar-brand" href="#">
           <img
             src="assets/images/mako-racing.svg"
             alt="Mecanizados Mako"
             style="width: 220px; height: auto"
         /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarTogglerDemo02"
-          aria-controls="navbarTogglerDemo02"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="racing-nav">
-            <li class="nav-item">
-              <a href="#caliper">CALIPERS DE FRENO</a>
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            TODOS LOS PRODUCTOS
+          </button>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="#caliper">CALIPER DE FRENO</a>
             </li>
-            <li class="nav-item"><a href="#bomba">BOMBAS HIDRÁULICAS</a></li>
-            <li class="nav-item">
-              <a href="#masas">MASAS TRASERAS</a>
+            <li><a class="dropdown-item" href="#bomba">BOMBA HIDRÁULICA</a></li>
+            <li><a class="dropdown-item" href="#masas">MASA TRASERA</a></li>
+            <li>
+              <a class="dropdown-item" href="#porta-rodamientos"
+                >PORTA RODAMIENTO</a
+              >
             </li>
-            <li class="nav-item">
-              <a href="#porta-rodamientos">PORTA RODAMIENTOS</a>
+            <li>
+              <a class="dropdown-item" href="#porta-coronas">PORTA CORONA</a>
             </li>
-            <li class="nav-item">
-              <a href="#porta-coronas">PORTA CORONAS</a>
+            <li>
+              <a class="dropdown-item" href="#porta-discos">PORTA DISCO</a>
             </li>
-            <li class="nav-item">
-              <a href="#porta-discos">PORTA DISCOS</a>
+            <li>
+              <a class="dropdown-item" href="#kit-bomba"
+                >KIT DE REPARACIÓN PARA BOMBA DE FRENO</a
+              >
             </li>
-            <li class="nav-item">
-              <a href="#kit-bomba">KITS DE REPARACIÓN</a>
+            <li>
+              <a class="dropdown-item" href="#kit-caliper"
+                >KIT DE REPARACIÓN PARA CALIPER DE FRENO</a
+              >
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <!-- hero -->
-    <section id="hero">
+    <section id="hero-2">
       <div class="container">
         <div class="row">
           <h1>EQUIPO DE FRENO PARA KART MAKO RACING</h1>
@@ -118,7 +122,7 @@
     <section id="productos">
       <div class="container">
         <h3 id="caliper">CALIPER DE FRENO TRASERO C/ SOPORTE Y PASTILLA</h3>
-        <h3>CALIPERSDE FRENO TRASERO C/ SOPORTE (SIN PASTILLA)</h3>
+        <h3>CALIPER DE FRENO TRASERO C/ SOPORTE (SIN PASTILLA)</h3>
         <div class="responsive-center">
           <img src="assets/images/1-CALIPER-FRENO-TRASERO/1-CALIPER.jpg" />
           <img src="assets/images/1-CALIPER-FRENO-TRASERO/2-CALIPER.JPG" />
@@ -163,7 +167,7 @@
             src="assets/images/7-KIT-REPARACIÓN-BOMBA-FRENO/1-KIT-REPARACION-BOMBA-FRENO.jpg"
           />
         </div>
-        <h3 id="kit-freno">KIT REPARACIÓN CALIPER DE FRENO</h3>
+        <h3 id="kit-caliper">KIT REPARACIÓN CALIPER DE FRENO</h3>
         <div class="responsive-center">
           <img
             src="assets/images/8-KIT-REPARACIÓN-CALIPER-FRENO/8-KIT-REPARACION-CALIPER-FRENO.jpeg"
@@ -189,190 +193,157 @@
         </div>
       </div>
     </section>
-    <!-- footer -->
-    <footer class="footer-section">
-      <div class="container p-0 overflow-hidden">
-        <div class="footer-cta">
-          <div class="row no-gutters row-cols-1 row-cols-lg-3">
-            <div class="col">
-              <div class="single-cta">
-                <i class="fas fa-map-marker-alt fa-4x"></i>
-                <div class="cta-text">
-                  <h4>ENCONTRANOS EN</h4>
-                  <p>
-                    Senador J.Pallares 1227, B1822AEF Gerli, Provincia de Buenos
-                    Aires
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="single-cta">
-                <i class="fas fa-phone fa-4x"></i>
-                <div class="cta-text">
-                  <h4>TELÉFONO</h4>
-                  <p>(+54) 11 3972 4800</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="single-cta">
-                <i class="fas fa-envelope fa-4x"></i>
-                <div class="cta-text">
-                  <h4>CORREO ELECTRÓNICO</h4>
-                  <p>info@mako.com.ar</p>
-                </div>
+
+    <!-- Pié de página -->
+    <footer>
+      <div class="container p-0 overflow-hidden footer-cta">
+        <div class="row no-gutters row-cols-1 row-cols-lg-3">
+          <div class="col">
+            <div class="single-cta">
+              <i class="fas fa-phone fa-4x"></i>
+              <div class="cta-text">
+                <h4>11 3972 4800</h4>
+                <p>Teléfono</p>
               </div>
             </div>
           </div>
-        </div>
-        <div class="form-container">
-          <form
-            action="assets/webmail.php"
-            method="post"
-            enctype="multipart/form-data"
-          >
-            <h2>
-              ¿QUERÉS COTIZAR UN TRABAJO? ENVIANOS TU CONSULTA Y TE
-              RESPONDEREMOS A LA BREVEDAD
-            </h2>
-            <div class="small-divider-line" style="margin-bottom: 36px"></div>
-            <input
-              type="text"
-              name="name"
-              required
-              class="field"
-              placeholder="Nombre y apellido"
-            />
-            <input
-              type="text"
-              name="tel"
-              required
-              class="field"
-              placeholder="Teléfono de contacto"
-            />
-            <div
-              class="radio-inputs d-flex justify-content-start align-items-center"
-            >
-              <input type="radio" name="perfil" /><label for="empresa"
-                >Empresa</label
-              >
-              <input type="radio" name="perfil" /><label for="particular"
-                >Particular</label
-              >
-            </div>
-            <input
-              type="text"
-              name="email"
-              required
-              class="field"
-              placeholder="E-mail"
-            />
-            <textarea
-              name="message"
-              rows="5"
-              placeholder="¿Cómo podemos ayudarte?"
-              class="field"
-            ></textarea>
-            <input type="file" name="Archivos subidos[]" multiple />
-            <input
-              type="submit"
-              value="Enviar consulta"
-              class="btn btn-success me-2"
-            />
-          </form>
-        </div>
-        <div class="footer-content">
-          <div class="row no-gutters row-cols-1 row-cols-lg-3">
-            <div class="col">
-              <div class="footer-widget">
-                <div class="footer-logo">
-                  <a href="index.html"
-                    ><img
-                      src="assets/images/mako-racing.svg"
-                      alt="Mecanizados Mako"
-                      style="width: 220px; height: auto"
-                  /></a>
-                </div>
-                <div class="footer-text">
-                  <p>
-                    Mako es una empresa metalúrgica argentina con más de 30 años
-                    de experiencia en la industria nacional lista para agregar
-                    valor a la satisfacción de sus clientes abarcando las etapas
-                    de diseño, desarrollo, y fabricación por medio de
-                    equipamiento de calidad.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="footer-widget">
-                <div class="footer-widget-heading">
-                  <h3>Navegación</h3>
-                </div>
-                <ul>
-                  <li><a href="#hero">Inicio</a></li>
-                  <li><a href="#services">Servicios</a></li>
-                  <li><a href="#clients">Clientes</a></li>
-                  <li><a href="#gallery">Trabajos realizados</a></li>
-                  <li><a href="#contact">Contacto</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col">
-              <div class="footer-widget">
-                <div class="footer-social-icon">
-                  <span>Seguinos en nuestras redes</span>
-                  <a
-                    href="https://www.facebook.com/people/Mecanizados-Mako/100009306059550/"
-                    ><i class="fab fa-facebook-f facebook-bg"></i
-                  ></a>
-                  <a href="https://www.instagram.com/mecanizadosmako/"
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                </div>
+          <div class="col">
+            <div class="single-cta">
+              <i class="fas fa-envelope fa-4x"></i>
+              <div class="cta-text">
+                <h4>info@mako.com.ar</h4>
+                <p>E-mail</p>
               </div>
             </div>
           </div>
-        </div>
-        <div class="copyright-area">
-          <div class="container">
-            <div class="row no-gutters row-cols-1 row-cols-lg-2">
-              <div class="col">
-                <div class="copyright-text">
-                  <p>
-                    © Mecanizados Mako 2023.
-                    <a href="https://selvaggiesteban.dev" target="_blank"
-                      >Diseño de página web LANDING PAGE</a
-                    >
-                  </p>
-                </div>
-              </div>
-              <div class="col">
-                <div class="footer-menu">
-                  <ul>
-                    <li>
-                      <a
-                        href="mailto:info@mako.com.ar?subject=Solicititud de cotización"
-                        >Obtener una cotización</a
-                      >
-                    </li>
-                    <li>
-                      <a href="tel:3971-7385">Llamar ahora</a>
-                    </li>
-                    <li>
-                      <a href="https://goo.gl/maps/sk1tesWZRBc8kRR58"
-                        >Ver mapa</a
-                      >
-                    </li>
-                  </ul>
-                </div>
+          <div class="col">
+            <div class="single-cta">
+              <i class="fas fa-map-marker-alt fa-4x"></i>
+              <div class="cta-text">
+                <h4>
+                  Senador J.Pallares 1227, Gerli, Provincia de Buenos Aires
+                </h4>
+                <p>Ubicación</p>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="container form-container">
+        <form
+          action="assets/webmail.php"
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <h2>
+            ¿QUERÉS COTIZAR UN TRABAJO? ENVIANOS TU CONSULTA Y TE RESPONDEREMOS
+            A LA BREVEDAD
+          </h2>
+          <div class="small-divider-line" style="margin-bottom: 36px"></div>
+          <input
+            type="text"
+            name="name"
+            required
+            class="field"
+            placeholder="Nombre y apellido"
+          />
+          <input
+            type="text"
+            name="tel"
+            required
+            class="field"
+            placeholder="Teléfono de contacto"
+          />
+          <div
+            class="radio-inputs d-flex justify-content-start align-items-center"
+          >
+            <input type="radio" name="perfil" /><label for="empresa"
+              >Empresa</label
+            >
+            <input type="radio" name="perfil" /><label for="particular"
+              >Particular</label
+            >
+          </div>
+          <input
+            type="text"
+            name="email"
+            required
+            class="field"
+            placeholder="E-mail"
+          />
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="¿Cómo podemos ayudarte?"
+            class="field"
+          ></textarea>
+          <input type="file" name="Archivos subidos[]" multiple />
+          <input
+            type="submit"
+            value="Enviar consulta"
+            class="btn btn-success me-2"
+          />
+        </form>
+      </div>
+      <div class="container footer-content">
+        <div class="row no-gutters row-cols-1 row-cols-lg-3">
+          <div class="col footer-widget">
+            <a href="index.html"
+              ><img
+                class="footer-logo"
+                src="assets/images/logo.svg"
+                alt="Mecanizados Mako"
+            /></a>
+            <p class="footer-text">
+              Mako es una empresa metalúrgica argentina con más de 30 años de
+              experiencia en la industria nacional lista para agregar valor a la
+              satisfacción de sus clientes abarcando las etapas de diseño,
+              desarrollo, y fabricación por medio de equipamiento de calidad.
+            </p>
+          </div>
+          <div class="col footer-widget">
+            <h3>Navegación</h3>
+            <ul>
+              <li><a href="#hero">Inicio</a></li>
+              <li><a href="#services">Servicios</a></li>
+              <li><a href="#clients">Clientes</a></li>
+              <li><a href="#gallery">Trabajos realizados</a></li>
+              <li><a href="#contact">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="col footer-widget">
+            <h3>Seguinos en nuestras redes</h3>
+            <div class="footer-social-icon">
+              <a
+                href="https://www.facebook.com/people/Mecanizados-Mako/100009306059550/"
+                ><i class="fab fa-facebook-f facebook-bg"></i
+              ></a>
+              <a href="https://www.instagram.com/mecanizadosmako/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="container">
+          <p>
+            © Mecanizados Mako 2023 -
+            <a href="https://selvaggiesteban.dev" target="_blank"
+              >Diseño de páginas web LANDING PAGE</a
+            >
+          </p>
+        </div>
+      </div>
     </footer>
+    <!-- WHATSAPP WIDGET -->
+    <a
+      href="https://api.whatsapp.com/send?phone=+5491151159838&text=¡Hola!"
+      class="float"
+      target="_blank"
+    >
+      <i class="fa fa-whatsapp my-float"></i
+    ></a>
     <!-- JS Scripts -->
     <!-- bootstrap -->
     <script
