@@ -116,8 +116,8 @@
   font-size: 24px;
   color: #fff;
   text-decoration: none;
-  display: inline-block;
-  margin: 30px 0px;
+  display: block;
+  margin: 30px auto;
 }
 .primary-cta:hover {
   color: #fff;
@@ -188,7 +188,7 @@
 }
 /* hero */
 #hero {
-  padding: 100px 30px;
+  padding: 200px 10px;
   background: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0.6) 0%,
@@ -200,6 +200,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
+  text-align: center;
 }
 #hero h1 {
   font-size: 48px;
@@ -266,16 +267,12 @@
 /* services */
 #services {
   padding: 72px 30px 72px 30px;
-  background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.6) 0%,
-      rgba(0, 0, 0, 0.6) 80%,
-      rgba(0, 0, 0, 0.8) 100%
-    ),
-    url(../images/hero-bg.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+}
+#services .left {
+  text-align: end;
+}
+#services .right {
+  text-align: start;
 }
 #services .card img {
   height: 500px;
@@ -303,7 +300,6 @@
   font-size: 24px;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 72px;
 }
 #clients h3 span {
   color: #000 !important;
@@ -313,12 +309,6 @@
 #clients h3:before,
 #clients h3:after {
   background-color: var(--primary-color);
-  content: "";
-  display: inline-block;
-  height: 3px;
-  position: relative;
-  vertical-align: middle;
-  width: 8%;
 }
 #clients h3:before {
   right: 0.5em;
@@ -436,23 +426,22 @@
   background: #fff;
 }
 .footer-cta {
-  background-color: #b11b24;
   padding: 30px 0 30px 0;
 }
 .single-cta svg {
   display: block;
   margin: 30px auto 30px auto;
-  color: #fff;
+  color: #b11b24;
 }
 .cta-text h4 {
   text-align: center;
   font-size: 24px;
-  color: #fff;
+  color: #000;
 }
 .cta-text p {
   text-align: center;
   font-size: 18px;
-  color: #fff;
+  color: #000;
 }
 .footer-content {
   padding: 30px 30px;
@@ -580,6 +569,23 @@
   color: var(--solid-primary-color);
 }
 
+.slick-slider {
+  margin: 0 0 44px 0;
+}
 .slick-track {
   margin-left: 0 !important;
+}
+
+#productos {
+  padding: 200px 0;
+}
+
+#productos h3 {
+  text-align: center;
+  font-weight: 700;
+  padding: 10px 10px;
+}
+#productos h2 {
+  text-align: center;
+  margin: 0 0 100px 0;
 }
